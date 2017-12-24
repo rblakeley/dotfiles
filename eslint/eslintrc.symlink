@@ -1,0 +1,17 @@
+{
+  "extends": "terrafarm-react",
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "globals": {
+    "describe": true,
+    "it": true,
+    "expect": true,
+    "context": true,
+  },
+  "rules": {
+    "arrow-parens": 0,
+    "no-console": 0,
+  }
+}
