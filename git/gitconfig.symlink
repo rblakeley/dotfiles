@@ -17,6 +17,7 @@
 [core]
         excludesfile = ~/.gitignore
         editor = vim
+        whitespace = space-before-tab,indent-with-non-tab,trailing-space
 [apply]
         whitespace = nowarn
 [mergetool]
@@ -31,3 +32,5 @@
         #
         # Setting to git 2.0 default to suppress warning message
         default = simple
+[format]
+        pretty = format:%C(yellow)%h%Creset -%C(red)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset
