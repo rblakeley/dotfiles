@@ -2,6 +2,8 @@ cask_args appdir: '/Applications'
 
 tap 'homebrew/bundle'
 
+cask 'xquartz'
+
 brew 'ack'
 brew 'coreutils'
 brew 'curl'
@@ -22,7 +24,7 @@ brew 'rbenv'
 brew 'roundup'
 brew 'spaceman-diff'
 brew 'spark'
-brew 'the_silver_surfer'
+brew 'the_silver_searcher'
 brew 'tldr'
 brew 'unrar'
 brew 'watchman'
