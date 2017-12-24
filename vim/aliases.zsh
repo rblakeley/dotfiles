@@ -1,0 +1,1 @@
+alias m="command mvim"
