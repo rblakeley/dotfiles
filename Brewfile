@@ -29,6 +29,7 @@ brew 'watchman'
 brew 'wget'
 brew 'yarn'
 brew 'youtube-dl'
+brew 'z'
 
 cask '1password'
 cask 'adium'

@@ -12,6 +12,12 @@ then
   source ~/.localrc
 fi
 
+# init z, which gets installed via Brewfile
+if [[ -a ~/z.sh ]]
+then
+  source ~/z.sh
+fi
+
 # all of our zsh files
 typeset -U config_files
 config_files=($ZSH/**/*.zsh)
