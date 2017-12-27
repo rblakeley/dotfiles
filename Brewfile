@@ -27,7 +27,6 @@ brew 'tldr'
 brew 'unrar'
 brew 'watchman'
 brew 'wget'
-brew 'yarn'
 brew 'youtube-dl'
 brew 'z'
 
