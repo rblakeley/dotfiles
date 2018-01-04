@@ -19,7 +19,7 @@ alias lsd='ls -lF ${colorflag} | grep "^d"' # only directories
 
 # Colored up cat!
 # You must install Pygments first - "sudo easy_install Pygments"
-alias c='pygmentize -O style=monokai -f console256 -g'
+alias ca='pygmentize -O style=monokai -f console256 -g'
 
 # Quicker navigation
 alias ..="cd .."
