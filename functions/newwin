@@ -1,0 +1,6 @@
+#!/bin/zsh
+
+# Opens a new Terminal window and optionally executes a command.
+function newwin {
+    newtab "$@" # Simply pass through to 'newtab', which will examine the call stack to see how it was invoked.
+}
