@@ -1,0 +1,19 @@
+terrafarm() {
+  echo "Launching Terrafarm development console."
+
+  # Terminal tabs for each development process
+  newtab eval "cd ~/Code/terrafarm/api; npm run dev;"
+  newtab eval "cd ~/Code/terrafarm/frontend; npm run dev;"
+  newtab eval "cd ~/Code/terrafarm/frontend; npm run relay-watch;"
+  newtab eval "cd ~/Code/terrafarm/agent-fulfillment; npm run dev;"
+  newtab eval "cd ~/Code/terrafarm/agent-fulfillment; ngrok http 3002;"
+
+  cd ~/Code/terrafarm/db
+
+  # Chrome tabs for GraphiQL, frontend web app, and Dialogflow
+  eval "chrome http://localhost:3001/graphiql http://localhost:3000 https://console.dialogflow.com"
+
+  # Postico opens a GUI for the database
+  eval "postico"
+}
+
