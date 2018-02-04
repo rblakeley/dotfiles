@@ -18,3 +18,11 @@ pg_ctl -D /usr/local/var/postgres -l logfile start
 ```bash
 createdb
 ```
+
+Then setup [sqitch](https://github.com/theory/homebrew-sqitch).
+
+```bash
+brew tap theory/sqitch
+brew install sqitch
+brew install sqitch_pg
+```
