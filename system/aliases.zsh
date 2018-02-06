@@ -18,7 +18,7 @@ alias la="ls -laF ${colorflag}" # all files inc dotfiles, in long format
 alias lsd='ls -lF ${colorflag} | grep "^d"' # only directories
 
 # Colored up cat!
-# You must install Pygments first - "sudo easy_install Pygments"
+# You must install Pygments first - "sudo easy_install Pygments" or "pip3 install pygments"
 alias ca='pygmentize -O style=monokai -f console256 -g'
 
 # Quicker navigation
