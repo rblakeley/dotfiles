@@ -119,4 +119,4 @@ let g:syntastic_python_checkers = ['flake8']
 
 
 " Project-specific configuration
-autocmd BufRead,BufNewFile ~/Code/lungo-frontend/* setlocal expandtab shiftwidth=4 tabstop=4 autoindent smarttab
+" autocmd BufRead,BufNewFile ~/Code/lungo-frontend/* setlocal expandtab shiftwidth=4 tabstop=4 autoindent smarttab
