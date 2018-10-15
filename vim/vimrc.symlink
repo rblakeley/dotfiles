@@ -38,7 +38,10 @@ autocmd FileType json setlocal shiftwidth=2 tabstop=2 softtabstop=2
 autocmd FileType markdown setlocal shiftwidth=2 tabstop=2
 autocmd FileType python setlocal expandtab shiftwidth=4 tabstop=4 autoindent smarttab
 
-map <C-n> :NERDTreeToggle<CR>
+" patch `gf` for js files
+" https://damien.pobel.fr/post/configure-neovim-vim-gf-javascript-import/
+set path=.,src,node_nodules
+set suffixesadd=.js,.jsx
 
 
 """"" VUNDLE SETTINGS
@@ -115,6 +118,12 @@ let g:jsx_ext_required = 0
 " syntax checkers
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_python_checkers = ['flake8']
+
+
+
+" NERD SETTINGS
+map <C-n> :NERDTreeToggle<CR>
+let NERDSpaceDelims=1
 
 
 
