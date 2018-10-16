@@ -38,10 +38,6 @@ autocmd FileType json setlocal shiftwidth=2 tabstop=2 softtabstop=2
 autocmd FileType markdown setlocal shiftwidth=2 tabstop=2
 autocmd FileType python setlocal expandtab shiftwidth=4 tabstop=4 autoindent smarttab
 
-" patch `gf` for js files
-" https://damien.pobel.fr/post/configure-neovim-vim-gf-javascript-import/
-set path=.,src,node_nodules
-set suffixesadd=.js,.jsx
 
 
 """"" VUNDLE SETTINGS
@@ -78,6 +74,8 @@ Plugin 'JulesWang/css.vim'
 Plugin 'justinj/vim-react-snippets'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'Lokaltog/vim-distinguished'
+Plugin 'moll/vim-node'
+Plugin 'mtscout6/syntastic-local-eslint.vim'
 Plugin 'mxw/vim-jsx'
 Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'pangloss/vim-javascript'
@@ -90,7 +88,6 @@ Plugin 'tpope/vim-surround'
 Plugin 'valloric/MatchTagAlways'
 Plugin 'wincent/command-t'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
-Plugin 'mtscout6/syntastic-local-eslint.vim'
 " Plugin 'nanotech/jellybeans.vim'
 " Plugin 'valloric/youcompleteme'
 " Plugin 'jistr/vim-nerdtree-tabs'
