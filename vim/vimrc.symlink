@@ -40,6 +40,12 @@ autocmd FileType python setlocal expandtab shiftwidth=4 tabstop=4 autoindent sma
 
 
 
+""""" MAPPINGS
+" console.log word under cursor
+nmap <Leader>l yiwoconsole.log('<c-r>":', <c-r>");<Esc>^
+
+
+
 """"" VUNDLE SETTINGS
 " https://github.com/gmarik/Vundle.vim
 "
