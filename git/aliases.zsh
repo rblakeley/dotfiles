@@ -25,3 +25,5 @@ alias gac='git add -A && git commit -m'
 alias ge='git-edit-new'
 # alias gp='git push'
 alias grm='git rm $(git ls-files --deleted)'
+
+# checkout before certain date='git checkout `git rev-list -n 1 --before="2018-01-01 12:00" master`'
