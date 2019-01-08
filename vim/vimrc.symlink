@@ -132,4 +132,4 @@ let NERDSpaceDelims=1
 
 " Project-specific configuration
 " autocmd BufRead,BufNewFile ~/Code/lungo-frontend/* setlocal expandtab shiftwidth=4 tabstop=4 autoindent smarttab
-autocmd BufRead,BufNewFile ~/Code/acuity/* setlocal softtabstop=0 noexpandtab nolist
+autocmd BufRead,BufNewFile ~/Code/acuity/* setlocal noexpandtab softtabstop=0 tabstop=2 nolist
