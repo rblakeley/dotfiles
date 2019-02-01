@@ -127,6 +127,7 @@ let g:syntastic_python_checkers = ['flake8']
 
 " NERD SETTINGS
 map <C-n> :NERDTreeToggle<CR>
+map <C-f> :NERDTreeFind<CR>
 let NERDSpaceDelims=1
 
 
