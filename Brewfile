@@ -32,6 +32,7 @@ brew 'youtube-dl'
 brew 'z'
 
 cask 'atom'
+cask 'brave-browser'
 cask 'docker'
 cask 'firefox'
 cask 'google-chrome'
