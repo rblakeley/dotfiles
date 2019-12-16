@@ -129,9 +129,9 @@ let g:syntastic_python_checkers = ['flake8']
 
 
 """"" MULTIPLE CURSORS SETTINGS
-let g:multi_cursor_start_word_key = '<C-w>'
-let g:multi_cursor_start_key = 'g<C-w>'
-let g:multi_cursor_next_key = '<C-w>'
+let g:multi_cursor_start_word_key = '<C-s>'
+let g:multi_cursor_start_key = 'g<C-s>'
+let g:multi_cursor_next_key = '<C-s>'
 
 
 
