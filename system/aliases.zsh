@@ -34,4 +34,4 @@ alias sudo='sudo '
 alias copy="tr -d '\n' | pbcopy"
 
 # Generate a UUID and pipe to my clipboard.
-alias uuid="uuidgen | tr -d '\n' | pbcopy | echo '=> Generated UUID copied to pasteboard.'"
+alias uuid="uuidgen | tr -d '\n' | pbcopy | echo '=> Generated UUID copied to pasteboard.'; pbpaste; print"
