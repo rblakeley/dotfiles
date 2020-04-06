@@ -27,4 +27,4 @@ alias ge='git-edit-new'
 alias grm='git rm $(git ls-files --deleted)'
 
 # checkout before certain date='git checkout `git rev-list -n 1 --before="2018-01-01 12:00" master`'
-gcodate() { git checkout `git rev-list -n 1 --before="$1" master` }
+gcodate() { git checkout `git rev-list -n 1 --before="$1" master` } # ex. gcodate '2019-10-10'
