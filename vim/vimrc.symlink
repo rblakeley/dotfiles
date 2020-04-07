@@ -110,6 +110,11 @@ nmap <Leader>l yiwoconsole.log('<c-r>":', <c-r>");<Esc>^
 
 
 
+""""" CtrlP fuzzy file finder
+let g:ctrlp_show_hidden = 1
+
+
+
 """"" SYNTASTIC SETTINGS
 " https://github.com/scrooloose/syntastic
 
