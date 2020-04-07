@@ -69,6 +69,7 @@ Plugin 'airblade/vim-gitgutter'"
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'bling/vim-airline'
 Plugin 'chriskempson/base16-vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'endel/vim-github-colorscheme'
 Plugin 'junegunn/goyo.vim'
 Plugin 'junegunn/seoul256.vim'
@@ -91,12 +92,12 @@ Plugin 'tpope/vim-rhubarb.git'
 Plugin 'tpope/vim-surround'
 Plugin 'rojobuffalo/vim-fubitive'
 Plugin 'valloric/MatchTagAlways'
-Plugin 'wincent/command-t'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'zxqfl/tabnine-vim'
 " Plugin 'nanotech/jellybeans.vim'
 " Plugin 'valloric/youcompleteme'
 " Plugin 'jistr/vim-nerdtree-tabs'
+" Plugin 'wincent/command-t'
 call vundle#end()
 
 
