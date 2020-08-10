@@ -65,34 +65,35 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'   " required
 
 " Other plugins
-Plugin 'airblade/vim-gitgutter'" 
-Plugin 'altercation/vim-colors-solarized'
+Plugin 'airblade/vim-gitgutter'
+" Plugin 'altercation/vim-colors-solarized'
 Plugin 'bling/vim-airline'
 Plugin 'chriskempson/base16-vim'
 Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'endel/vim-github-colorscheme'
-Plugin 'junegunn/goyo.vim'
-Plugin 'junegunn/seoul256.vim'
+" Plugin 'endel/vim-github-colorscheme'
+" Plugin 'junegunn/goyo.vim'
+" Plugin 'junegunn/seoul256.vim'
 Plugin 'JulesWang/css.vim'
-Plugin 'justinj/vim-react-snippets'
-Plugin 'leafgarland/typescript-vim'
-Plugin 'Lokaltog/vim-distinguished'
-Plugin 'MaxMEllon/vim-jsx-pretty'
-Plugin 'moll/vim-node'
+" Plugin 'justinj/vim-react-snippets'
+" Plugin 'leafgarland/typescript-vim'
+" Plugin 'Lokaltog/vim-distinguished'
+" Plugin 'MaxMEllon/vim-jsx-pretty'
+" Plugin 'moll/vim-node'
 Plugin 'mtscout6/syntastic-local-eslint.vim'
 Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'pangloss/vim-javascript'
-Plugin 'quanganhdo/grb256'
+" Plugin 'quanganhdo/grb256'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
-Plugin 'terryma/vim-multiple-cursors'
+" Plugin 'terryma/vim-multiple-cursors'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-rhubarb.git'
 Plugin 'tpope/vim-surround'
 Plugin 'valloric/MatchTagAlways'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'zxqfl/tabnine-vim'
+
 " Plugin 'jistr/vim-nerdtree-tabs'
 " Plugin 'nanotech/jellybeans.vim'
 " Plugin 'rojobuffalo/vim-fubitive'
@@ -133,6 +134,12 @@ let g:syntastic_filetype_map = { "javascriptreact": "javascript" }
 
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_python_checkers = ['flake8']
+
+
+
+""""" JAVASCRIPT SYNTAX
+" https://github.com/othree/javascript-libraries-syntax.vim
+let g:used_javascript_libs = 'jquery,react'
 
 
 
