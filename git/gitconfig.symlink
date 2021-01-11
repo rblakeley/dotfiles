@@ -2,7 +2,7 @@
 [include]
         path = ~/.gitconfig.local
 [hub]
-        protocol = https
+	protocol = ssh
 [alias]
         co = checkout
         promote = !$ZSH/bin/git-promote
@@ -34,3 +34,5 @@
         default = simple
 [format]
         pretty = format:%C(yellow)%h%Creset -%C(red)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset
+[pull]
+	rebase = true
