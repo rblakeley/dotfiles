@@ -73,6 +73,7 @@ Plugin 'blueyed/smarty.vim'
 Plugin 'chriskempson/base16-vim'
 Plugin 'ctrlpvim/ctrlp.vim'
 " Plugin 'endel/vim-github-colorscheme'
+Plugin 'jremmen/vim-ripgrep'
 " Plugin 'junegunn/goyo.vim'
 " Plugin 'junegunn/seoul256.vim'
 Plugin 'JulesWang/css.vim'
@@ -158,6 +159,11 @@ let g:multi_cursor_next_key = '<C-s>'
 map <C-n> :NERDTreeToggle<CR>
 map <C-f> :NERDTreeFind<CR>
 let NERDSpaceDelims=1
+
+
+
+""""" RIPGREP SETTINGS
+nnoremap \ :Rg<CR>
 
 
 
