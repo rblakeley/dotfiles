@@ -17,7 +17,7 @@ function move_index_paths_to_named_paths() {
       currentParentFragment=$(echo $currentParent | perl -pe 's/\..*(?=\/[\w-]*\/$)//g');
       # echo 'current parent fragment:' $currentParentFragment;
       newFileFragment=$(echo $currentParentFragment | perl -pe 's/\///g');
-      # echo 'new file fragment:' $newFileFragment;
+      echo 'new file fragment:' $newFileFragment;
       indexPathExtension=$(echo $indexPath | perl -pe 's/.*(?=\..*$)//g');
       # echo 'extension:' $indexPathExtension;
       newPath="${currentParent}${newFileFragment}${indexPathExtension}";
@@ -25,11 +25,11 @@ function move_index_paths_to_named_paths() {
       mv $indexPath $newPath;
 
       echo 'update external references';
-      externalPathsWithImportReference=($(rg "$newFileFragment';$" -l));
+      externalPathsWithImportReference=($(rg "/$newFileFragment';$" -l));
       for externalFile in $externalPathsWithImportReference;
       do
         echo 'external file:' $externalFile;
-        find $externalFile | xargs perl -p -i -e "s/$newFileFragment';$/$newFileFragment\/$newFileFragment';/g";
+        find $externalFile | xargs perl -p -i -e "s/\/$newFileFragment';$/\/$newFileFragment\/$newFileFragment';/g";
       done
     else
       newPath=$(echo $indexPath | perl -pe 's/\/index//g');
