@@ -29,7 +29,7 @@ function move_index_paths_to_named_paths() {
       for externalFile in $externalPathsWithImportReference;
       do
         echo 'external file:' $externalFile;
-        find $externalFile | xargs perl -p -i -e "s/$newFileFragment';$/$newFileFragment\/$newFileFragment/g";
+        find $externalFile | xargs perl -p -i -e "s/$newFileFragment';$/$newFileFragment\/$newFileFragment';/g";
       done
     else
       newPath=$(echo $indexPath | perl -pe 's/\/index//g');
