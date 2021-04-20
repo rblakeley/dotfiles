@@ -25,7 +25,7 @@ function move_index_paths_to_named_paths() {
       mv $indexPath $newPath;
 
       echo 'update external references';
-      externalPathsWithImportReference=($(rg "/$newFileFragment';$" -l));
+      externalPathsWithImportReference=($(rg "\..*/$newFileFragment';$" . -l));
       for externalFile in $externalPathsWithImportReference;
       do
         echo 'external file:' $externalFile;
