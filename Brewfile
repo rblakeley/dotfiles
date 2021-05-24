@@ -17,6 +17,8 @@ brew 'libcaca', args: ['with-imlib2']
 brew 'libgit2'
 brew 'macvim'
 brew 'openssl'
+brew 'pyenv'
+brew 'pyenv-virtualenv'
 brew 'pygments'
 brew 'readline'
 brew 'postgresql'
